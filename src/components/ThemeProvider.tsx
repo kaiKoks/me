@@ -1,6 +1,5 @@
+'use client'
 import React, { createContext, useState } from "react"
-
-`use client`
 
 type Theme = 'light' | 'dark'
 
