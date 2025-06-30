@@ -1,5 +1,6 @@
 'use client'
-import React, { createContext, useState } from "react"
+import React, { createContext, useEffect, useState } from "react"
+import TogleThemeButton from "./TogleThemeButton"
 
 type Theme = 'light' | 'dark'
 
@@ -15,7 +16,18 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
     const toggleTheme = () => {
         theme === 'dark' ? setTheme('light') : setTheme('dark')
     }
+    useEffect(() => {
+        console.log('changed')
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark'); 
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    }, [theme])
     return (
-        <ThemeContex.Provider value={{ theme, toggleTheme }}>{children}</ThemeContex.Provider>
+        <ThemeContex.Provider value={{ theme, toggleTheme }}>
+            <TogleThemeButton toggleTheme={toggleTheme} theme={theme} />
+            {children}
+        </ThemeContex.Provider>
     )
 }
