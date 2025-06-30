@@ -14,16 +14,35 @@ const ThemeContex = createContext<ThemeContexType | undefined>(undefined)
 export default function ThemeProvider({ children }: { children: React.ReactNode }) {
     const [theme, setTheme] = useState<Theme>('dark')
     const toggleTheme = () => {
-        theme === 'dark' ? setTheme('light') : setTheme('dark')
+        if (theme === 'dark') {
+            setTheme('light')
+            localStorage.theme = 'light';
+        }
+        else {
+            setTheme('dark')
+            localStorage.theme = 'dark';
+        }
     }
     useEffect(() => {
-        console.log('changed')
         if (theme === 'dark') {
-            document.documentElement.classList.add('dark'); 
+            document.documentElement.classList.add('dark')
+
         } else {
-            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.remove('dark')
+            localStorage.theme = 'light'
         }
     }, [theme])
+
+    useEffect(() => {
+        const savedTheme = localStorage.theme as Theme | null
+        console.log(savedTheme)
+        if (savedTheme) {
+            setTheme(savedTheme)
+        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            setTheme('light')
+        }
+    }, [])
+
     return (
         <ThemeContex.Provider value={{ theme, toggleTheme }}>
             <TogleThemeButton toggleTheme={toggleTheme} theme={theme} />
