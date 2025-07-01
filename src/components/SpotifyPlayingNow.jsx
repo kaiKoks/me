@@ -8,7 +8,7 @@ export default function SpotifyPlayingNow() {
 
     const updateNowPlaying = async () => {
         try {
-            const res = await fetch('/api/') // Рекомендуется: вынести логику на сервер
+            const res = await fetch('/api/spotify') // Рекомендуется: вынести логику на сервер
             const data = await res.json()
             setSong(data.body)
         } catch (error) {
@@ -17,34 +17,36 @@ export default function SpotifyPlayingNow() {
             setIsLoading(false)
         }
     }
-    console.log(song)
     useEffect(() => {
         updateNowPlaying()
 
-        const interval = setInterval(updateNowPlaying, 10000) 
+        const interval = setInterval(updateNowPlaying, 10000)
 
         return () => clearInterval(interval)
     }, [])
-    
-    
+
+    if (song.noContent) return <p>Nothing playing right now</p>
     if (isLoading) return (
-        <div className='flex flex-col items-center'>
+        <div className='flex  items-center gap-1.5'>
             <p>Now playing</p>
             <div className='w-50 h-50 bg-gray-600 rounded-4xl'></div>
             <p>Song name</p>
             <p>Artist name</p>
 
         </div>)
-    if (!song.songUrl) return
 
     return (
         <a href={song.songUrl} target='_blank'>
-            <div className='flex flex-col items-center gap-1.5'>
-                <p> Now playing:  </p>
-                <div style={{ backgroundImage: `url(${song.albumImageUrl})` }} className='bg-cover bg-center bg-no-repeat rounded-4xl w-50 h-50'>
+            <p className='text-[#bd0404] text-center'> Now playing </p>
+
+            <div className='flex  items-center gap-1.5'>
+                <div style={{ backgroundImage: `url(${song.albumImageUrl})` }} className='bg-cover bg-center bg-no-repeat rounded-4xl w-40 h-40'>
                 </div>
-                <p className='w-100 text-center '> {song.title}</p>
-                <p> {song.artist}</p>
+                <div>
+                    <p className='pl-7 text-[#09b17e] dark:text-[#52ad4e] w-100 text-wrap'> {song.title}</p>
+                    <p className='pl-7 text-[#a21ec4] dark:text-[#632cf8]'> {song.artist}</p>
+                </div>
+
             </div>
         </a>
     )

@@ -11,7 +11,7 @@ export default async function getNowPlaying() {
     })
 
     if (res.status === 204 || res.status > 400) {
-        return { body: { isPlaying: false } }
+        return { body: { noContent: true } }
     }
 
     const song = await res.json();
