@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] flex flex-col items-center p-10 text-4xl">
         <p>hi</p>
-        <div className="rounded-4xl p-5 m-4 border-3 border-neutral-900 dark:border-neutral-100 border-dashed">
+        <div className="rounded-4xl m-4  max-w-[90vw]">
           <SpotifyPlayingNow/>
         </div>
     </div>
