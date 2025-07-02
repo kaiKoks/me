@@ -1,8 +1,8 @@
 import React from 'react'
 
 export default function Song({song}) {
-    return (
-        <a href={song.songUrl} target='_blank' className='block group min-w-80 '>
+  return (
+     <a href={song.songUrl} target='_blank' className='block group min-w-80 '>
             <div className='bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-3 border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-600'>
                 {/* header */}
                 <div className="flex items-center justify-center gap-2 mb-4">
@@ -58,5 +58,5 @@ export default function Song({song}) {
                 </div>
             </div>
         </a>
-    )
+  )
 }

@@ -28,14 +28,7 @@ export default function SpotifyPlayingNow() {
         return () => clearInterval(interval)
     }, [])
 
-
     if (isLoading) return <SongLoadingPlaceholder />
-
     if (song.noContent) return <NothingPlaying />
-
-
-
     return <Song song={song}/>
-       
-    
 }

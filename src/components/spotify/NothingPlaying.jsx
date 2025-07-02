@@ -28,21 +28,21 @@ export default function NothingPlaying() {
 
                         {/* Placeholder Song Info */}
                         <div className="flex-1 min-w-0">
-                            <div className="font-semibold text-gray-400 dark:text-gray-500 text-lg leading-tight mb-1">
+                            <div className="font-semibold text-gray-500 text-lg leading-tight mb-1">
                                 No song playing
                             </div>
-                            <div className="text-gray-400 dark:text-gray-500">Nothing playing right now</div>
+                            <div className="text-gray-500">Nothing playing right now</div>
 
                         </div>
                     </div>
 
                     {/* Static sound waves */}
                     <div className="flex items-center justify-center gap-1 mt-4 opacity-30">
-                        <div className="w-0.5 h-2 bg-gray-400 rounded-full"></div>
-                        <div className="w-0.5 h-2 bg-gray-400 rounded-full"></div>
-                        <div className="w-0.5 h-2 bg-gray-400 rounded-full"></div>
-                        <div className="w-0.5 h-2 bg-gray-400 rounded-full"></div>
-                        <div className="w-0.5 h-2 bg-gray-400 rounded-full"></div>
+                        <div className="w-0.5 h-2 bg-gray-700 dark:bg-gray-400 rounded-full"></div>
+                        <div className="w-0.5 h-2 bg-gray-700 dark:bg-gray-400 rounded-full"></div>
+                        <div className="w-0.5 h-2 bg-gray-700 dark:bg-gray-400  rounded-full"></div>
+                        <div className="w-0.5 h-2 bg-gray-700 dark:bg-gray-400 rounded-full"></div>
+                        <div className="w-0.5 h-2 bg-gray-700 dark:bg-gray-400  rounded-full"></div>
                     </div>
                 </div>
             </div>
