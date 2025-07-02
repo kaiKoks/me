@@ -3,7 +3,7 @@ import React from 'react'
 export default function NothingPlaying() {
   return (
     <div className="block">
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                     {/* Not Playing Header */}
                     <div className="flex items-center justify-center gap-2 mb-4">
                         <div className="flex items-center gap-1">
@@ -20,7 +20,7 @@ export default function NothingPlaying() {
                     <div className="flex items-center gap-4">
                         {/* Placeholder Album Art */}
                         <div className="relative flex-shrink-0">
-                            <div className="bg-gray-200 dark:bg-gray-700 rounded-xl w-20 h-20 shadow-md flex items-center justify-center">
+                            <div className="bg-gray-200 dark:bg-gray-700 rounded-xl  w-25 h-25 shadow-md flex items-center justify-center">
                                 <img src='music.png' className='w-4 h-4 grayscale-100'></img>
 
                             </div>
@@ -28,10 +28,10 @@ export default function NothingPlaying() {
 
                         {/* Placeholder Song Info */}
                         <div className="flex-1 min-w-0">
-                            <div className="font-semibold text-gray-500 text-lg leading-tight mb-1">
+                            <div className="font-semibold text-gray-500 text-2xl leading-tight mb-1">
                                 No song playing
                             </div>
-                            <div className="text-gray-500">Nothing playing right now</div>
+                            <div className="text-gray-500 text-xl">Nothing playing right now</div>
 
                         </div>
                     </div>

@@ -20,16 +20,16 @@ export default function Song({song}) {
                     <div className="relative flex-shrink-0">
                         <div
                             style={{ backgroundImage: `url(${song.albumImageUrl})` }}
-                            className="bg-cover bg-center bg-no-repeat rounded-xl w-30 h-30 shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                            className="bg-cover bg-center bg-no-repeat rounded-xl w-25 h-25 shadow-md group-hover:shadow-lg transition-shadow duration-300">
                         </div>
                     </div>
 
                     {/* Song Info */}
                     <div className="flex-1 min-w-0">
-                        <h3 className="font-semibold text-gray-900 dark:text-white text-lg leading-tight mb-1  group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors duration-300">
+                        <h3 className="font-semibold text-gray-900 dark:text-white text-2xl leading-tight mb-1  group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors duration-300">
                             {song.title}
                         </h3>
-                        <p className="text-gray-600 dark:text-gray-400  group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
+                        <p className="text-gray-600 dark:text-gray-400 text-xl group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
                             {song.artist}
                         </p>
 

@@ -3,7 +3,7 @@ import React from 'react'
 export default function SongLoadingPlaceholder() {
     return (
         <div className="block ">
-            <div className="bg-gradient-to-br x w-80 h-60 from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+            <div className="bg-gradient-to-br x w-80 h-60 from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                 {/* Loading Header */}
                 <div className="flex items-center justify-center gap-2 mb-4">
                     <div className="flex items-center gap-1">
@@ -19,7 +19,7 @@ export default function SongLoadingPlaceholder() {
                 <div className="flex items-center gap-4">
                     {/* Loading Album Art */}
                     <div className="relative flex-shrink-0">
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-xl w-30 h-30 shadow-md animate-pulse"></div>
+                        <div className="bg-gray-200 dark:bg-gray-700 rounded-xl  w-25 h-25 shadow-md animate-pulse"></div>
                     </div>
 
                     {/* Loading Song Info */}
