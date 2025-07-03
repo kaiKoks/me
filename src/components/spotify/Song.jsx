@@ -50,11 +50,11 @@ export default function Song({song}) {
 
                 {/* waves animation */}
                 <div className="flex items-center justify-center gap-1 mt-4 opacity-70">
-                    <div className="w-0.5 h-3 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-pulse"></div>
-                    <div className="w-0.5 h-4 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-pulse delay-75"></div>
-                    <div className="w-0.5 h-2 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-pulse delay-150"></div>
-                    <div className="w-0.5 h-5 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-pulse delay-200"></div>
-                    <div className="w-0.5 h-3 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-pulse delay-300"></div>
+                    <div className="w-0.5 h-3 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-dance"></div>
+                    <div className="w-0.5 h-4 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-dance delay-25"></div>
+                    <div className="w-0.5 h-2 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-dance delay-50"></div>
+                    <div className="w-0.5 h-5 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-dance delay-75"></div>
+                    <div className="w-0.5 h-3 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-dance delay-100"></div>
                 </div>
             </div>
         </a>
