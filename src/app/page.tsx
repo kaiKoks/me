@@ -5,8 +5,8 @@ import TechStack from "@/components/TechStackIcons";
 
 export default function Home() {
   return (
-    <div className=" font-[family-name:var(--font-geist-sans)] flex flex-col items-center p-10 text-xl transition-all duration-300 min-h-screen">
-      <div className="container mx-auto  py-12 max-w-3xl">
+    <div className=" font-[family-name:var(--font-geist-sans)] flex flex-col items-center text-xl transition-all duration-300 min-h-screen ">
+      <div className="container mx-auto  py-12 max-w-3xl ">
 
         <section className="mb-10 ">
           <div className="flex gap-3 text-3xl md:text-5xl items-center justify-center">
@@ -19,24 +19,22 @@ export default function Home() {
                 <p className="opacity-50 text-lg">
                   Barnaul, Russia
                 </p>
+
               </div>
-              <p className="text-sm opacity-50">
+              <p className="text-sm opacity-50 mb-2">
                 cheremisin.ilya@gmail.com
               </p>
+
             </div>
           </div>
         </section>
 
-        <section className=" text-2xl md:text-3xl font-semibold mb-6 text-center ">
-          <h2 className='mb-4'>Links</h2>
-          <Links></Links>
-        </section>
 
         <section className=" text-2xl md:text-3xl font-semibold mb-6 text-center ">
           <h2 className='mb-4'>Tech stack</h2>
           <TechStackIcons></TechStackIcons>
         </section>
-        <div className="rounded-4xl max-w-[90vw] py-10 ">
+        <div className="rounded-4xl max-w-[90vw] py-10 justify-center mx-auto">
           <SpotifyPlayingNow />
         </div>
       </div>

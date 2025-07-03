@@ -1,5 +1,5 @@
 'use client'
-import React, { createContext, useEffect, useState } from "react"
+import React, { createContext, useContext, useEffect, useState } from "react"
 import TogleThemeButton from "./TogleThemeButton"
 
 type Theme = 'light' | 'dark'
@@ -8,8 +8,16 @@ interface ThemeContexType {
     theme: Theme,
     toggleTheme: () => void
 }
-const ThemeContex = createContext<ThemeContexType | undefined>(undefined)
+const ThemeContext = createContext<ThemeContexType | undefined>(undefined)
 
+export const useTheme = () => {
+    const context = useContext(ThemeContext)
+    if (context === undefined) {
+        throw new Error("useTheme must be used within a ThemeProvider")
+    }
+    return context
+
+}
 
 export default function ThemeProvider({ children }: { children: React.ReactNode }) {
     const [theme, setTheme] = useState<Theme>('dark')
@@ -44,9 +52,8 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
     }, [])
 
     return (
-        <ThemeContex.Provider value={{ theme, toggleTheme }}>
-            <TogleThemeButton toggleTheme={toggleTheme} theme={theme} />
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
             {children}
-        </ThemeContex.Provider>
+        </ThemeContext.Provider>
     )
 }

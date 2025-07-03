@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SongLoadingPlaceholder() {
     return (
-        <div className="block ">
+        <div className="flex justify-center ">
             <div className="bg-gradient-to-br x w-80 h-60 from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                 {/* Loading Header */}
                 <div className="flex items-center justify-center gap-2 mb-4">
