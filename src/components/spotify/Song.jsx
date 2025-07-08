@@ -12,7 +12,7 @@ export default function Song({song}) {
                         <div className="w-1 h-1 bg-red-300 rounded-full animate-pulse delay-150"></div>
                     </div>
                     <p className="text-red-500 font-medium text-sm uppercase tracking-wide">Now Playing</p>
-                    <img src='music.png' className='w-4 h-4'></img>
+                    <img src='music.png' alt={song.title} className='w-4 h-4'></img>
                 </div>
 
                 <div className="flex items-center  gap-4">
