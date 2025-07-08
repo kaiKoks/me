@@ -5,7 +5,7 @@ import TechStack from "@/components/TechStackIcons";
 
 export default function Home() {
   return (
-    <div className=" font-[family-name:var(--font-geist-sans)] flex flex-col items-center text-xl transition-all duration-300 min-h-screen ">
+    <div className=" font-[family-name:var(--font-geist-sans)] flex flex-col items-center text-xl transition-all duration-300  ">
       <div className="container mx-auto  py-12 max-w-3xl ">
 
         <section className="mb-10 ">
