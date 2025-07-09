@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function NothingPlaying() {
     return (
-        <div className="block  w-fit m-auto">
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+        <div className="block  w-fit mx-auto">
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-neutral-950 dark:to-neutral-900 rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                 {/* Not Playing Header */}
                 <div className="flex items-center justify-center gap-2 mb-4">
                     <div className="flex items-center gap-1">
@@ -38,7 +38,7 @@ export default function NothingPlaying() {
                 </div>
 
                 {/* Static sound waves */}
-                <div className="flex items-center justify-center gap-1 mt-4 opacity-30">
+                <div className="flex items-center justify-center gap-1 mt-2 opacity-30">
                     <div className="w-0.5 h-2 bg-gray-700 dark:bg-gray-400 rounded-full"></div>
                     <div className="w-0.5 h-2 bg-gray-700 dark:bg-gray-400 rounded-full"></div>
                     <div className="w-0.5 h-2 bg-gray-700 dark:bg-gray-400  rounded-full"></div>

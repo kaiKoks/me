@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 export default function Song({ song }) {
     return (
-        <a href={song.songUrl} target='_blank' className='block group min-w-80 w-fit m-auto'>
-            <div className='bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-950 dark:to-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-3 border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-600'>
+        <a href={song.songUrl} target='_blank' className='block group min-w-80 w-fit mx-auto'>
+            <div className='bg-gradient-to-br from-gray-50 to-gray-100 dark:from-neutral-950 dark:to-neutral-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-3 border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-600'>
                 {/* header */}
                 <div className="flex items-center justify-center gap-2 mb-4">
                     <div className="flex items-center gap-1">
@@ -49,7 +49,7 @@ export default function Song({ song }) {
                 </div>
 
                 {/* waves animation */}
-                <div className="flex items-center justify-center gap-1 mt-4 opacity-70">
+                <div className="flex items-center justify-center gap-1 mt-2 opacity-70 ">
                     <div className="w-0.5 h-3 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-dance"></div>
                     <div className="w-0.5 h-4 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-dance delay-75"></div>
                     <div className="w-0.5 h-2 bg-gradient-to-t from-green-400 to-green-600 rounded-full animate-dance delay-150"></div>
