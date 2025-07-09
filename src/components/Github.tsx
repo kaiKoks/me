@@ -65,7 +65,7 @@ export default function Github() {
 
     return (
         <div className="w-full max-w-5xl mx-auto p-2 ">
-            <div className="flex items-center justify-center gap-3 mb-3">
+            <div className="flex items-center justify-center gap-3 mb-5">
                 <Image src='/icons/github.svg' width={32} height={32} alt='github' className='dark:invert' />
                 <div>
                     <h2 className="text-2xl font-semibold ">GitHub Repositories</h2>
@@ -76,7 +76,7 @@ export default function Github() {
             {isLoading ? (
                 <div className="flex gap-3 justify-center flex-wrap">
                     {Array.from({ length: 3 }).map((_, index) => (
-                        <div key={index} className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm min-w-57 ">
+                        <div key={index} className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm min-w-[90%] md:min-w-57  h-35.5 ">
                             <div className="p-6">
                                 <div className="animate-pulse">
                                     <div className="h-5 bg-gray-200 dark:bg-neutral-800 rounded w-3/4 mb-3"></div>
@@ -95,7 +95,7 @@ export default function Github() {
                     {repos.map((repo) => (
                         <div
                             key={repo.id}
-                            className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm hover:shadow-lg hover:border-gray-300 hover:dark:border-gray-700 transition-shadow flex flex-col h-full min-w-57  w-fit"
+                            className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm hover:shadow-lg hover:border-gray-300 hover:dark:border-gray-700 transition-shadow flex flex-col h-full min-w-[90%] md:min-w-57  w-fit"
                         >
                             <div className="px-6 pt-6 pb-3 flex-1 ">
                                 <div className="flex items-start justify-between mb-1">

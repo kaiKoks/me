@@ -5,10 +5,10 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className=" font-[family-name:var(--font-geist-sans)] flex flex-col items-center text-xl transition-all duration-300  ">
+    <div className=" font-[family-name:var(--font-geist-sans)] flex flex-col items-center text-xl transition-all duration-300">
       <div className="container mx-auto py-3 max-w-3xl ">
 
-        <section className="mb-2 ">
+        <section className="mb-6 px-2">
           <div className="flex gap-3 text-3xl md:text-5xl items-center justify-center">
             <div className="w-40 h-40 shrink-0 relative ">
               <Image src='/me.png' fill alt="me" className="rounded-full object-cover object-[50%_5%] brightness-120 contrast-95 shadow-xl ring-2 ring-gray-800 dark:ring-gray-300 text-center"></Image>
@@ -32,11 +32,11 @@ export default function Home() {
         </section>
 
 
-        <section className=" text-2xl md:text-3xl font-semibold mb-1 text-center ">
+        <section className=" text-2xl md:text-3xl font-semibold text-center mb-6 ">
           <h2 className='mb-4'>Tech stack</h2>
           <TechStackIcons></TechStackIcons>
         </section>
-        <section className="mb-3">
+        <section className="mb-6">
           <Github></Github>
         </section>
         <div className="rounded-4xl max-w-[90vw] my-3 justify-center mx-auto">
