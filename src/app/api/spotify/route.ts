@@ -10,6 +10,7 @@ export async function GET() {
     },
   });
 } catch (error) {
+  console.error(error)
   return new Response(
     JSON.stringify({ body: { noContent: true } }),
     {
