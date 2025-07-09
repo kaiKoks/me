@@ -43,7 +43,6 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
 
     useEffect(() => {
         const savedTheme = localStorage.theme as Theme | null
-        console.log(savedTheme)
         if (savedTheme) {
             setTheme(savedTheme)
         } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {

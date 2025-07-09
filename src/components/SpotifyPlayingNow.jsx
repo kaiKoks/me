@@ -11,7 +11,7 @@ export default function SpotifyPlayingNow() {
 
     const updateNowPlaying = async () => {
         try {
-            const res = await fetch('/api/spotify') // Рекомендуется: вынести логику на сервер
+            const res = await fetch('/api/spotify') 
             const data = await res.json()
             setSong(data.body)
         } catch (error) {
@@ -30,5 +30,5 @@ export default function SpotifyPlayingNow() {
 
     if (isLoading) return <SongLoadingPlaceholder />
     if (song.noContent) return <NothingPlaying />
-    return <Song song={song}/>
+    return <Song song={song} />
 }
