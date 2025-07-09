@@ -1,7 +1,6 @@
-import Links from "@/components/Links";
+import Github from "@/components/Github";
 import SpotifyPlayingNow from "@/components/SpotifyPlayingNow";
 import TechStackIcons from "@/components/TechStackIcons";
-import TechStack from "@/components/TechStackIcons";
 
 export default function Home() {
   return (
@@ -10,7 +9,7 @@ export default function Home() {
 
         <section className="mb-10 ">
           <div className="flex gap-3 text-3xl md:text-5xl items-center justify-center">
-            <img src='me.png' alt="me"  className="w-40 h-40 rounded-full object-cover object-[50%_5%] brightness-120 contrast-95 shadow-xl shrink-0 ring-2 ring-gray-800 dark:ring-gray-300 text-center leading-40"></img>
+            <img src='me.png' alt="me" className="w-40 h-40 rounded-full object-cover object-[50%_5%] brightness-120 contrast-95 shadow-xl shrink-0 ring-2 ring-gray-800 dark:ring-gray-300 text-center leading-40"></img>
             <div>
               <h1 className="font-bold mb-1">Ilya</h1>
               <p className="opacity-50"> Frontend developer</p>
@@ -33,6 +32,9 @@ export default function Home() {
         <section className=" text-2xl md:text-3xl font-semibold mb-6 text-center ">
           <h2 className='mb-4'>Tech stack</h2>
           <TechStackIcons></TechStackIcons>
+        </section>
+        <section>
+          <Github></Github>
         </section>
         <div className="rounded-4xl max-w-[90vw] py-10 justify-center mx-auto">
           <SpotifyPlayingNow />
