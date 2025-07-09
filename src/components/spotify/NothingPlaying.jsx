@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function NothingPlaying() {
     return (
@@ -12,7 +13,7 @@ export default function NothingPlaying() {
                         <div className="w-1 h-1 bg-gray-200 rounded-full"></div>
                     </div>
                     <p className="text-gray-500 font-medium text-sm uppercase tracking-wide">Not Playing</p>
-                    <img src='music.png' className='w-4 h-4 grayscale-100'></img>
+                    <Image src='/music.png' alt='nothing' width={15} height={15} className='grayscale-100'></Image>
 
                 </div>
 
@@ -21,7 +22,7 @@ export default function NothingPlaying() {
                     {/* Placeholder Album Art */}
                     <div className="relative flex-shrink-0">
                         <div className="bg-gray-200 dark:bg-gray-700 rounded-xl  w-25 h-25 shadow-md flex items-center justify-center">
-                            <img src='music.png' className='w-4 h-4 grayscale-100'></img>
+                    <Image src='/music.png' alt='nothing' width={15} height={15} className='grayscale-100'></Image>
 
                         </div>
                     </div>

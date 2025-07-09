@@ -12,7 +12,7 @@ export default function Github() {
 
             setRepos(data)
         } catch (error) {
-            console.error('Ошибка при получении данных о треке:', error)
+            console.error('Ошибка при получении данных о репозиториях:', error)
         } finally {
             setIsLoading(false)
         }

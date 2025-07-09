@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 export default function Song({ song }) {
     return (
         <a href={song.songUrl} target='_blank' className='block group min-w-80 w-fit m-auto'>
@@ -12,7 +12,7 @@ export default function Song({ song }) {
                         <div className="w-1 h-1 bg-red-300 rounded-full animate-pulse delay-150"></div>
                     </div>
                     <p className="text-red-500 font-medium text-sm uppercase tracking-wide">Now Playing</p>
-                    <img src='music.png' alt={song.title} className='w-4 h-4'></img>
+                    <Image src='/music.png' alt={song.title} width={15} height={15}></Image>
                 </div>
 
                 <div className="flex items-center  gap-4">

@@ -1,5 +1,5 @@
 "use client"
-import React, { useContext } from 'react'
+import React from 'react'
 import Links from './Links'
 import TogleThemeButton from './TogleThemeButton'
 import { useTheme } from './ThemeProvider'

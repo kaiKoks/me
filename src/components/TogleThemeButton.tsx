@@ -1,14 +1,14 @@
 import React from 'react'
-
+import Image from 'next/image'
 
 export default function TogleThemeButton({ toggleTheme, theme }: { toggleTheme: () => void, theme: 'light' | 'dark' }) {
 
     return (
         <button className='' onClick={toggleTheme}>
             {theme === 'dark' ?
-                <img className='w-10 h-10 invert brightness-1' src="moon.svg"></img>
+                <Image className='invert brightness-1' width={35} height={35} alt='dark theme' src="moon.svg"></Image>
                 :
-                <img className='w-10 h-10' src="sun.svg"></img>
+                <Image width={35} height={35} alt='white theme' src="sun.svg"></Image>
             }
         </button>
     )

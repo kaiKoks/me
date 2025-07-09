@@ -1,6 +1,7 @@
 import Github from "@/components/Github";
 import SpotifyPlayingNow from "@/components/SpotifyPlayingNow";
 import TechStackIcons from "@/components/TechStackIcons";
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
 
         <section className="mb-10 ">
           <div className="flex gap-3 text-3xl md:text-5xl items-center justify-center">
-            <img src='me.png' alt="me" className="w-40 h-40 rounded-full object-cover object-[50%_5%] brightness-120 contrast-95 shadow-xl shrink-0 ring-2 ring-gray-800 dark:ring-gray-300 text-center leading-40"></img>
+            <div className="w-40 h-40 shrink-0 relative ">
+              <Image src='/me.png' fill objectFit='cover' alt="me" className="rounded-full object-[50%_5%] brightness-120 contrast-95 shadow-xl ring-2 ring-gray-800 dark:ring-gray-300 text-center"></Image>
+            </div>
             <div>
               <h1 className="font-bold mb-1">Ilya</h1>
               <p className="opacity-50"> Frontend developer</p>
