@@ -23,7 +23,7 @@ export default function SpotifyPlayingNow() {
     useEffect(() => {
         updateNowPlaying()
 
-        const interval = setInterval(updateNowPlaying, 10000)
+        const interval = setInterval(updateNowPlaying, 30000)
 
         return () => clearInterval(interval)
     }, [])
