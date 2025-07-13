@@ -99,7 +99,7 @@ export default function Github() {
                         >
                             <div className="px-6 pt-6 pb-3 flex-1 ">
                                 <div className="flex items-start justify-between mb-1">
-                                    <h3 className="text-lg text-nowrap font-semibold pr-2 group-hover:text-blue-600 dark:group-hover:text-blue-400">{repo.name}</h3>
+                                    <h3 className="text-lg text-nowrap font-semibold pr-2 group-hover:text-green-600 dark:group-hover:text-green-500 ">{repo.name}</h3>
                                     <a
                                         href={repo.html_url}
                                         target="_blank"
@@ -116,7 +116,7 @@ export default function Github() {
                             <div className="px-5 ">
                                 <div className="flex flex-wrap gap-2 mb-3">
                                     {repo.language && (
-                                        <span className="inline-flex items-center gap-1 px-2 py-1 bg-gray-100 dark:bg-[#222020ce]  text-xs rounded-full opacity-85">
+                                        <span className="inline-flex items-center gap-1 px-2 py-1 bg-gray-100 dark:bg-neutral-700/40  text-xs rounded-full opacity-85 ">
                                             <div className={`w-2 h-2 rounded-full ${getLanguageColor(repo.language)}`} />
                                             {repo.language}
                                         </span>
