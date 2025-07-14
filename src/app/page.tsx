@@ -17,7 +17,7 @@ export default function Home() {
               <h1 className="font-bold mb-1">Ilya</h1>
               <p className="opacity-50"> Frontend developer</p>
               <div className="flex items-center mb-1">
-                <Image src='/location.svg' alt="location" priority={true}  width={15} height={15} className=" inline mr-1 brightness-50 dark:brightness-100 dark:opacity-50"></Image>
+                <Image src='/location.svg' alt="location" priority={true} width={15} height={15} className=" inline mr-1 brightness-50 dark:brightness-100 dark:opacity-50"></Image>
                 <p className="opacity-50 text-lg">
                   Barnaul, Russia
                 </p>
