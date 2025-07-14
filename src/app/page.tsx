@@ -11,10 +11,7 @@ export default function Home() {
         <section className="mb-6 px-2">
           <div className="flex gap-3 text-3xl md:text-5xl items-center justify-center">
             <div className="w-40 h-40 shrink-0 relative rounded-full">
-              <Image src='/me.png' sizes="160" fill alt="me" priority={true} placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAAXNSR0IArs4c6QAAAWlJREFUKFNFjs1uEgEURs+dgbHzxzAM7dCZUqZAk67UaNJ3qeyMPpGPYOLaxDRuXKoxqXGrlRjFRUOo2gaEMsnANUATz/rccz95cfpOB4MRasCf37+4GIzIpzn5zYyiWCDPnr/UONlh+PMHb1+d8u28j7/dwQ1ilipI9+hYe09OmF0O+fT6DcuiYIJFkN6lbFeQ7OBIe097DL985fP7M0zTZFwo1eYD3GoD2c+6evL4Ef0PHxn1v2PZDrkdYNgpbrCN1MJY4ySG+RxflS2/yrWUGE9yss4x4rmhigiOVaYR+BimxUwM/k7GZPv3ENepqvAf/45FGlSoOA5eFCOeE6qigCIIlmlQ9xxa9TrxXgvxvZrqStHlWlphmSZ7tZD2boLUo0Tn85tbYblWNqUSD7MW0kzbenV9heqC9at1RLDLZe43m8juTqqT6fS2sBlrGCah73EYRUhQiXRRrK5XGzbEjYROt41TKvEPhASEJ9dRNmMAAAAASUVORK5CYII="
-                className="rounded-full object-cover object-[50%_5%] brightness-120 contrast-95 shadow-xl ring-2 ring-gray-800 dark:ring-gray-300 text-center">
-              </Image>
+              <Image src='/me.png' sizes="160" fill alt="me" priority={true} className="rounded-full object-cover object-[50%_5%] brightness-120 contrast-95 shadow-xl ring-2 ring-gray-800 dark:ring-gray-300 text-center"></Image>
             </div>
             <div>
               <h1 className="font-bold mb-1">Ilya</h1>
