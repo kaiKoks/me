@@ -1,11 +1,11 @@
 
+https://kaikoks.netlify.app/
+
 ### My resume 
 builded with next js
-
-run: 
 ```bash
-[pnpm run dev
+pnpm run dev
 # or
-pnpm run build]
+pnpm run build
 ```
 
