@@ -11,7 +11,7 @@ export default function Home() {
         <section className="mb-6 px-2">
           <div className="flex gap-3 text-3xl md:text-5xl items-center justify-center">
             <div className="w-40 h-40 shrink-0 relative rounded-full">
-              <Image src='/me.png' sizes="160" fill alt="me" priority={true} className="rounded-full object-cover object-[50%_5%] brightness-120 contrast-95 shadow-xl ring-2 ring-gray-800 dark:ring-gray-300 text-center"></Image>
+              <Image src='/me.png' sizes="160" fill alt="me" priority={true} className="rounded-full object-cover brightness-120 contrast-95 shadow-xl ring-2 ring-gray-800 dark:ring-gray-300 text-center" style={{ objectPosition: '50% 5%' }}></Image>
             </div>
             <div>
               <h1 className="font-bold mb-1">Ilya</h1>
