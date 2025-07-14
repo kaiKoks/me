@@ -10,14 +10,14 @@ export default function Home() {
 
         <section className="mb-6 px-2">
           <div className="flex gap-3 text-3xl md:text-5xl items-center justify-center">
-            <div className="w-40 h-40 shrink-0 relative ">
-              <Image src='/me.png' fill alt="me" className="rounded-full object-cover object-[50%_5%] brightness-120 contrast-95 shadow-xl ring-2 ring-gray-800 dark:ring-gray-300 text-center"></Image>
+            <div className="w-40 h-40 shrink-0 relative rounded-full">
+              <Image src='/me.png' fill alt="me" priority className="rounded-full   object-cover object-[50%_5%] brightness-120 contrast-95 shadow-xl ring-2 ring-gray-800 dark:ring-gray-300 text-center"></Image>
             </div>
             <div>
               <h1 className="font-bold mb-1">Ilya</h1>
               <p className="opacity-50"> Frontend developer</p>
               <div className="flex items-center mb-1">
-                <Image src='/location.svg' alt="location" width={15} height={15} className=" inline mr-1 brightness-50 dark:brightness-100 dark:opacity-50"></Image>
+                <Image src='/location.svg' alt="location" priority  width={15} height={15} className=" inline mr-1 brightness-50 dark:brightness-100 dark:opacity-50"></Image>
                 <p className="opacity-50 text-lg">
                   Barnaul, Russia
                 </p>
