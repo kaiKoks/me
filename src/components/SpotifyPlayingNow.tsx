@@ -4,14 +4,24 @@ import SongLoadingPlaceholder from './spotify/SongLoadingPlaceholder'
 import NothingPlaying from './spotify/NothingPlaying'
 import Song from './spotify/Song'
 
+interface PlayingSong {
+    name: string,
+    title: string,
+    albumImageUrl: string,
+    artist: string,
+    songUrl: string
+}
+interface NothingPlaying {
+    isNothingPlaying: true
+}
 export default function SpotifyPlayingNow() {
 
-    const [song, setSong] = useState({ isPlaying: false })
+    const [song, setSong] = useState<PlayingSong | NothingPlaying>({ isNothingPlaying: true })
     const [isLoading, setIsLoading] = useState(true)
 
     const updateNowPlaying = async () => {
         try {
-            const res = await fetch('/api/spotify') 
+            const res = await fetch('/api/spotify')
             const data = await res.json()
             setSong(data.body)
         } catch (error) {
@@ -29,6 +39,6 @@ export default function SpotifyPlayingNow() {
     }, [])
 
     if (isLoading) return <SongLoadingPlaceholder />
-    if (song.noContent) return <NothingPlaying />
+    if ('isNothingPlaying' in song) return <NothingPlaying />
     return <Song song={song} />
 }

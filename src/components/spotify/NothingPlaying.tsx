@@ -22,7 +22,7 @@ export default function NothingPlaying() {
                     {/* Placeholder Album Art */}
                     <div className="relative flex-shrink-0">
                         <div className="bg-gray-200 dark:bg-gray-700 rounded-xl  w-25 h-25 shadow-md flex items-center justify-center">
-                    <Image src='/music.png' alt='nothing' width={15} height={15} className='grayscale-100'></Image>
+                            <Image src='/music.png' alt='nothing' width={15} height={15} className='grayscale-100'></Image>
 
                         </div>
                     </div>

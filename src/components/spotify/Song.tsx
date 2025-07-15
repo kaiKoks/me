@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-export default function Song({ song }) {
+export default function Song({ song }: { song: { name: string, title: string, albumImageUrl: string, artist: string, songUrl: string } }) {
     return (
         <a href={song.songUrl} target='_blank' className='block group min-w-80 w-fit mx-auto'>
             <div className=' bg-gray-100 dark:bg-neutral-900 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-neutral-800 hover:border-gray-300 dark:hover:border-neutral-600'>
