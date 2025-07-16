@@ -17,7 +17,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Kai",
   description: "Frontend developer portfolio",
-  robots: "index, follow"
+  robots: "index, follow",
+  openGraph: {
+    title: 'Илья Черемисин | Frontend developer',
+    description: 'Frontend developer cv',
+    emails: 'cheremisin.ilya@gmail.com'
+  }
 
 };
 
