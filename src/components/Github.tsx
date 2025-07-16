@@ -152,7 +152,7 @@ export default function Github() {
 
             {!isLoading && repos.length === 0 && (
                 <div className="text-center py-8">
-                    <p className="">No public repositories found.</p>
+                    <p className="">Failed to fetch. </p>
                 </div>
             )}
 
