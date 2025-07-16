@@ -95,11 +95,11 @@ export default function Github() {
                     {repos.map((repo) => (
                         <div
                             key={repo.id}
-                            className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm hover:shadow-lg hover:border-gray-300 hover:dark:border-gray-700 transition-shadow flex flex-col h-full min-w-[90%] md:min-w-57  w-fit group"
+                            className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm hover:shadow-lg hover:border-gray-300 hover:dark:border-gray-700 flex flex-col h-full min-w-[90%] md:min-w-57  w-fit group"
                         >
                             <div className="px-6 pt-6 pb-3 flex-1 ">
                                 <div className="flex items-start justify-between mb-1">
-                                    <h3 className="text-lg text-nowrap font-semibold pr-2 group-hover:text-green-600 dark:group-hover:text-green-500 ">{repo.name}</h3>
+                                    <h3 className="text-lg text-nowrap font-semibold pr-2 group-hover:text-green-600 dark:group-hover:text-green-500  transition-colors duration-150">{repo.name}</h3>
                                     <a
                                         href={repo.html_url}
                                         target="_blank"
