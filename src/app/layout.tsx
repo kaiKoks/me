@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kai",
+  title: "Илья Черемисин | Frontend developer",
   description: "Frontend developer portfolio",
   robots: "index, follow",
   openGraph: {
