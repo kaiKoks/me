@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function NothingPlaying() {
     return (
         <div className="block  w-fit mx-auto">
-            <div className="bg-gray-100 dark:bg-neutral-900   rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-neutral-800">
+            <div className="bg-gray-50/70 dark:bg-neutral-900   rounded-2xl p-6 shadow-lg border border-gray-200 dark:border-neutral-800">
                 {/* Not Playing Header */}
                 <div className="flex items-center justify-center gap-2 mb-4">
                     <div className="flex items-center gap-1">

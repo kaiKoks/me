@@ -70,7 +70,7 @@ export default function Github() {
             {isLoading ? (
                 <div className="flex gap-3 justify-center flex-wrap">
                     {Array.from({ length: 3 }).map((_, index) => (
-                        <div key={index} className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm min-w-[90%] md:min-w-57  h-35.5 ">
+                        <div key={index} className="bg-gray-50/70 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm min-w-[90%] md:min-w-57  h-35.5 ">
                             <div className="p-6">
                                 <div className="animate-pulse">
                                     <div className="h-5 bg-gray-200 dark:bg-neutral-800 rounded w-3/4 mb-3"></div>
@@ -89,7 +89,7 @@ export default function Github() {
                     {repos?.map((repo: GitHubRepo) => (
                         <div
                             key={repo.id}
-                            className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm hover:shadow-lg hover:border-gray-300 hover:dark:border-gray-700 flex flex-col h-full min-w-[90%] md:min-w-57  w-fit group"
+                            className="bg-gray-50/70 dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-md hover:shadow-lg hover:border-gray-300 hover:dark:border-gray-700 flex flex-col h-full min-w-[90%] md:min-w-57  w-fit group"
                         >
                             <div className="px-6 pt-6 pb-3 flex-1 ">
                                 <div className="flex items-start justify-between mb-1">

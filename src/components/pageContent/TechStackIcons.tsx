@@ -118,7 +118,7 @@ export default function TechStackIcons() {
             {techIcons.map((tech, index) => (
                 <div
                     key={index}
-                    className="group relative flex items-center justify-center w-15 h-15 bg-gray-100 dark:bg-[#3a3f41a8] rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
+                    className="group relative flex items-center justify-center w-15 h-15 bg-gray-50/70 dark:bg-neutral-900 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
                 >
                     <div className="w-10 h-10">{tech.icon}</div>
 
