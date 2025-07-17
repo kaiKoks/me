@@ -1,7 +1,7 @@
-import Github from "@/components/Github";
-import ImageOfMe from "@/components/ImageOfMe";
-import SpotifyPlayingNow from "@/components/SpotifyPlayingNow";
-import TechStackIcons from "@/components/TechStackIcons";
+import Github from "@/components/pageContent/Github";
+import ImageOfMe from "@/components/pageContent/ImageOfMe";
+import SpotifyPlayingNow from "@/components/spotify/SpotifyPlayingNow";
+import TechStackIcons from "@/components/pageContent/TechStackIcons";
 import Image from 'next/image'
 
 export default function Home() {

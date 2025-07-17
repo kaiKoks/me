@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
-import SongLoadingPlaceholder from './spotify/SongLoadingPlaceholder'
-import NothingPlaying from './spotify/NothingPlaying'
-import Song from './spotify/Song'
+import SongLoadingPlaceholder from './songComponents/SongLoadingPlaceholder'
+import NothingPlaying from './songComponents/NothingPlaying'
+import Song from './songComponents/Song'
 import { useQuery } from '@tanstack/react-query'
 
 interface PlayingSong {

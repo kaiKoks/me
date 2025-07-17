@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Links from './Links'
+import Links from './pageContent/Links'
 import TogleThemeButton from './TogleThemeButton'
 import { useTheme } from '../features/ThemeProvider'
 
