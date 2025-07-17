@@ -1,8 +1,9 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import SongLoadingPlaceholder from './spotify/SongLoadingPlaceholder'
 import NothingPlaying from './spotify/NothingPlaying'
 import Song from './spotify/Song'
+import { useQuery } from '@tanstack/react-query'
 
 interface PlayingSong {
     name: string,
@@ -16,29 +17,18 @@ interface NothingPlaying {
 }
 export default function SpotifyPlayingNow() {
 
-    const [song, setSong] = useState<PlayingSong | NothingPlaying>({ isNothingPlaying: true })
-    const [isLoading, setIsLoading] = useState(true)
-
-    const updateNowPlaying = async () => {
-        try {
-            const res = await fetch('/api/spotify')
-            const data = await res.json()
-            setSong(data.body)
-        } catch (error) {
-            console.error('Ошибка при получении данных о треке:', error)
-        } finally {
-            setIsLoading(false)
-        }
+    const updateNowPlaying = async (): Promise<PlayingSong | NothingPlaying> => {
+        const res = await fetch('/api/spotify')
+        const data = await res.json()
+        return data.body
     }
-    useEffect(() => {
-        updateNowPlaying()
-
-        const interval = setInterval(updateNowPlaying, 30000)
-
-        return () => clearInterval(interval)
-    }, [])
+    const {
+        data: song,
+        isLoading,
+        error,
+    } = useQuery({ queryKey: ['spotify'], queryFn: updateNowPlaying, refetchInterval: 30000, refetchOnWindowFocus: true, })
 
     if (isLoading) return <SongLoadingPlaceholder />
-    if ('isNothingPlaying' in song) return <NothingPlaying />
+    if (typeof song === "undefined" || error || 'isNothingPlaying' in song) return <NothingPlaying />
     return <Song song={song} />
 }

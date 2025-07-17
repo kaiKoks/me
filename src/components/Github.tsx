@@ -1,6 +1,8 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
+import { useQuery } from '@tanstack/react-query'
+
 interface GitHubRepo {
     id: number
     name: string
@@ -16,24 +18,16 @@ interface GitHubRepo {
 }
 
 export default function Github() {
-    const [repos, setRepos] = useState<GitHubRepo[]>([])
-    const [isLoading, setIsLoading] = useState(true)
 
-    const getGithubRepos = async () => {
-        try {
-            setIsLoading(true)
-            const res = await fetch('https://api.github.com/users/Kaikoks/repos')
-            const data = await res.json()
-            setRepos(data.sort((a: GitHubRepo, b: GitHubRepo) => b.stargazers_count - a.stargazers_count))
-        } catch (error) {
-            console.error('Ошибка при получении данных о репозиториях:', error)
-        } finally {
-            setIsLoading(false)
-        }
+    const getGithubRepos = async (): Promise<GitHubRepo[]> => {
+        const res = await fetch('https://api.github.com/users/Kaikoks/repos')
+        return res.json()
     }
-    useEffect(() => {
-        getGithubRepos()
-    }, [])
+    const {
+        data: repos,
+        isLoading,
+    } = useQuery({queryKey: ['repos'], queryFn: getGithubRepos})
+
 
     const formatDate = (dateString: string) => {
         const date = new Date(dateString)
@@ -92,7 +86,7 @@ export default function Github() {
                 </div>
             ) : (
                 <div className="flex gap-3 justify-center flex-wrap">
-                    {repos.map((repo) => (
+                    {repos?.map((repo: GitHubRepo) => (
                         <div
                             key={repo.id}
                             className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm hover:shadow-lg hover:border-gray-300 hover:dark:border-gray-700 flex flex-col h-full min-w-[90%] md:min-w-57  w-fit group"
@@ -150,7 +144,7 @@ export default function Github() {
                 </div>
             )}
 
-            {!isLoading && repos.length === 0 && (
+            {!isLoading && repos?.length === 0 && (
                 <div className="text-center py-8">
                     <p className="">Failed to fetch. </p>
                 </div>
