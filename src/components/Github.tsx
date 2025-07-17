@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { useQuery } from '@tanstack/react-query'
+import { useSuspenseQuery } from '@tanstack/react-query'
 
 interface GitHubRepo {
     id: number
@@ -26,7 +26,7 @@ export default function Github() {
     const {
         data: repos,
         isLoading,
-    } = useQuery({queryKey: ['repos'], queryFn: getGithubRepos})
+    } = useSuspenseQuery({queryKey: ['repos'], queryFn: getGithubRepos})
 
 
     const formatDate = (dateString: string) => {
@@ -86,7 +86,7 @@ export default function Github() {
                 </div>
             ) : (
                 <div className="flex gap-3 justify-center flex-wrap">
-                    {repos?.map((repo: GitHubRepo) => (
+                    {repos.map((repo: GitHubRepo) => (
                         <div
                             key={repo.id}
                             className="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg shadow-sm hover:shadow-lg hover:border-gray-300 hover:dark:border-gray-700 flex flex-col h-full min-w-[90%] md:min-w-57  w-fit group"
@@ -144,7 +144,7 @@ export default function Github() {
                 </div>
             )}
 
-            {!isLoading && repos?.length === 0 && (
+            {!isLoading && repos.length === 0 && (
                 <div className="text-center py-8">
                     <p className="">Failed to fetch. </p>
                 </div>
