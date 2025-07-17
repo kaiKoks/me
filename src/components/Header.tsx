@@ -2,7 +2,7 @@
 import React from 'react'
 import Links from './Links'
 import TogleThemeButton from './TogleThemeButton'
-import { useTheme } from './ThemeProvider'
+import { useTheme } from '../features/ThemeProvider'
 
 export default function Header() {
     const { theme, toggleTheme } = useTheme()
