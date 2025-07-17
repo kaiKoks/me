@@ -26,7 +26,7 @@ export default function SpotifyPlayingNow() {
         data: song,
         isLoading,
         error,
-    } = useQuery({ queryKey: ['spotify'], queryFn: updateNowPlaying, refetchInterval: 30000, refetchOnWindowFocus: true, })
+    } = useQuery({ queryKey: ['spotify'], queryFn: updateNowPlaying, refetchInterval: 30000, refetchOnWindowFocus: true, staleTime: 20000 })
 
     if (isLoading) return <SongLoadingPlaceholder />
     if (typeof song === "undefined" || error || 'isNothingPlaying' in song) return <NothingPlaying />
