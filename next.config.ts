@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  async headers() {
+    experimental: {
+        reactCompiler: true,
+    },
+    /* config options here */
+    async headers() {
+
         return [{
             //cache all images, fonts, etc. in the public folder
             //Note: Next.js default is 'public, max-age=0' which cases many reloads on Safari!
@@ -13,7 +17,8 @@ const nextConfig: NextConfig = {
                 key: 'cache-control',
                 value: 'public, max-age=31536000, immutable'
             }]
-        }]}
+        }]
+    }
 };
 
 export default nextConfig;
