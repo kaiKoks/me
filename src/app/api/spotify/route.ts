@@ -1,4 +1,4 @@
-import getNowPlaying from '@/components/spotify/utils/nowPlaying'; // Путь к вашей функции
+import getNowPlaying from '@/components/pageContent/spotify/utils/nowPlaying'; // Путь к вашей функции
 
 export async function GET() {
   try {

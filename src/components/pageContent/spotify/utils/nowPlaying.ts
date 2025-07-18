@@ -1,3 +1,4 @@
+'use server'
 import { getAccessToken } from "./spotifyAccessToken";
 
 const now_playing_endpoint = `https://api.spotify.com/v1/me/player/currently-playing`;
