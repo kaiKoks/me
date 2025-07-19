@@ -1,7 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
+import { useTheme } from '@/features/ThemeProvider'
 
-export default function TogleThemeButton({ toggleTheme, theme }: { toggleTheme: () => void, theme: 'light' | 'dark' }) {
+export default function TogleThemeButton() {
+    const { theme, toggleTheme } = useTheme()
 
     return (
         <button className='' onClick={toggleTheme}>

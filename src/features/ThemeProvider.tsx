@@ -1,5 +1,5 @@
 'use client'
-import React, { createContext, useContext, useEffect, useState } from "react"
+import React, { createContext, use, useContext, useEffect, useState } from "react"
 
 type Theme = 'light' | 'dark'
 
@@ -10,7 +10,7 @@ interface ThemeContexType {
 const ThemeContext = createContext<ThemeContexType | undefined>(undefined)
 
 export const useTheme = () => {
-    const context = useContext(ThemeContext)
+    const context = use(ThemeContext)
     if (context === undefined) {
         throw new Error("useTheme must be used within a ThemeProvider")
     }
