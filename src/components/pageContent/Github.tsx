@@ -28,7 +28,7 @@ export default function Github() {
         data: repos,
         isLoading,
         isError
-    } = useQuery({ queryKey: ['repos'], queryFn: getGithubRepos, staleTime: 20000, retry: 1})
+    } = useQuery({ queryKey: ['repos'], queryFn: getGithubRepos, staleTime: 600000, retry: 1})
 
     const formatDate = (dateString: string) => {
         const date = new Date(dateString)
