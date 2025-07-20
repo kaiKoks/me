@@ -22,7 +22,7 @@ export default function Github() {
     const getGithubRepos = async (): Promise<GitHubRepo[]> => {
         const res = await fetch('https://api.github.com/users/Kaikoks/repos')
         if(res.ok) return res.json()
-        throw new Error("failed to fetch")
+        throw new Error("failed to fetch github repos")
     }
     const {
         data: repos,
