@@ -22,6 +22,15 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.js", "src/components/spotify/SpotifyPlayingNow.tsx", "src/components/pageContent/Github.tsx", "src/components/spotify/utils/spotifyAccessToken.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "tailwind.config.js",
+    "src/components/spotify/SpotifyPlayingNow.tsx",
+    "src/components/pageContent/Github.tsx",
+    "src/components/spotify/utils/spotifyAccessToken.js"
+  ],
   "exclude": ["node_modules"]
 }

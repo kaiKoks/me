@@ -17,14 +17,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Илья Черемисин | Frontend developer",
-  description: "Discover my journey as a frontend developer. View my CV, featured projects, and skills",
+  description:
+    "Discover my journey as a frontend developer. View my CV, featured projects, and skills",
   robots: "index, follow",
   openGraph: {
-    title: 'Илья Черемисин | Frontend developer',
-    description: 'Frontend developer cv',
-    emails: 'cheremisin.ilya@gmail.com'
-  }
-
+    title: "Илья Черемисин | Frontend developer",
+    description: "Frontend developer cv",
+    emails: "cheremisin.ilya@gmail.com",
+  },
 };
 
 export default function RootLayout({
@@ -32,11 +32,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
-
     <html className="dark" lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning
+      <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-[#050505f1] text-black dark:text-white `}
       >
         <TanstackProvider>
@@ -47,6 +46,5 @@ export default function RootLayout({
         </TanstackProvider>
       </body>
     </html>
-
   );
 }
