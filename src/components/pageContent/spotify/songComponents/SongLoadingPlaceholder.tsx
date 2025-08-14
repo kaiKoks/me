@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function SongLoadingPlaceholder() {
   return (
@@ -42,5 +42,5 @@ export default function SongLoadingPlaceholder() {
         </div>
       </div>
     </div>
-  );
+  )
 }

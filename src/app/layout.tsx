@@ -1,19 +1,19 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import ThemeProvider from "@/features/ThemeProvider";
-import Header from "@/components/Header";
-import { TanstackProvider } from "@/features/TanstackProvider";
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
+import "./globals.css"
+import ThemeProvider from "@/features/ThemeProvider"
+import Header from "@/components/Header"
+import { TanstackProvider } from "@/features/TanstackProvider"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-});
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
+})
 
 export const metadata: Metadata = {
   title: "Илья Черемисин | Frontend developer",
@@ -25,12 +25,12 @@ export const metadata: Metadata = {
     description: "Frontend developer cv",
     emails: "cheremisin.ilya@gmail.com",
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html className="dark" lang="en" suppressHydrationWarning>
@@ -46,5 +46,5 @@ export default function RootLayout({
         </TanstackProvider>
       </body>
     </html>
-  );
+  )
 }

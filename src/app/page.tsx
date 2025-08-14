@@ -1,8 +1,8 @@
-import Github from "@/components/pageContent/Github";
-import ImageOfMe from "@/components/pageContent/ImageOfMe";
-import SpotifyPlayingNow from "@/components/pageContent/spotify/SpotifyPlayingNow";
-import TechStackIcons from "@/components/pageContent/TechStackIcons";
-import Image from "next/image";
+import Github from "@/components/pageContent/Github"
+import ImageOfMe from "@/components/pageContent/ImageOfMe"
+import SpotifyPlayingNow from "@/components/pageContent/spotify/SpotifyPlayingNow"
+import TechStackIcons from "@/components/pageContent/TechStackIcons"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -49,5 +49,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }

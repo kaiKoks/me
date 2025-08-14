@@ -2,11 +2,11 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --animate-dance: dance 1.5s ease infinite;
+  --animate-dance: dance 1.5s ease infinite;
 
-    @keyframes dance {
-        50% {
-            transform: scaleY(0.5)
-        }
+  @keyframes dance {
+    50% {
+      transform: scaleY(0.5);
     }
+  }
 }

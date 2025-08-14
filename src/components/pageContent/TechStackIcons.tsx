@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const techIcons = [
   {
@@ -128,7 +128,7 @@ const techIcons = [
       </svg>
     ),
   },
-];
+]
 
 export default function TechStackIcons() {
   return (
@@ -147,5 +147,5 @@ export default function TechStackIcons() {
         </div>
       ))}
     </div>
-  );
+  )
 }

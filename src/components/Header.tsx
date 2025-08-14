@@ -1,7 +1,7 @@
-"use client";
-import React from "react";
-import Links from "./pageContent/Links";
-import TogleThemeButton from "./TogleThemeButton";
+"use client"
+import React from "react"
+import Links from "./pageContent/Links"
+import TogleThemeButton from "./TogleThemeButton"
 
 export default function Header() {
   return (
@@ -10,5 +10,5 @@ export default function Header() {
       <div className="w-px h-8 bg-gray-400 dark:bg-gray-600"></div>
       <TogleThemeButton />
     </header>
-  );
+  )
 }

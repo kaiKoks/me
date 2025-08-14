@@ -1,28 +1,28 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import { useQuery } from "@tanstack/react-query";
+"use client"
+import React from "react"
+import Image from "next/image"
+import { useQuery } from "@tanstack/react-query"
 
 interface GitHubRepo {
-  id: number;
-  name: string;
-  full_name: string;
-  description: string | null;
-  html_url: string;
-  language: string | null;
-  stargazers_count: number;
-  forks_count: number;
-  updated_at: string;
-  topics: string[];
-  private: boolean;
+  id: number
+  name: string
+  full_name: string
+  description: string | null
+  html_url: string
+  language: string | null
+  stargazers_count: number
+  forks_count: number
+  updated_at: string
+  topics: string[]
+  private: boolean
 }
 
 export default function Github() {
   const getGithubRepos = async (): Promise<GitHubRepo[]> => {
-    const res = await fetch("https://api.github.com/users/Kaikoks/repos");
-    if (res.ok) return res.json();
-    throw new Error("failed to fetch github repos");
-  };
+    const res = await fetch("https://api.github.com/users/Kaikoks/repos")
+    if (res.ok) return res.json()
+    throw new Error("failed to fetch github repos")
+  }
   const {
     data: repos,
     isLoading,
@@ -32,16 +32,16 @@ export default function Github() {
     queryFn: getGithubRepos,
     staleTime: 600000,
     retry: 1,
-  });
+  })
 
   const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
+    const date = new Date(dateString)
     return date.toLocaleDateString("en-US", {
       year: "numeric",
       month: "short",
       day: "numeric",
-    });
-  };
+    })
+  }
 
   const getLanguageColor = (language: string | null) => {
     const colors: { [key: string]: string } = {
@@ -58,9 +58,9 @@ export default function Github() {
       Go: "bg-cyan-600",
       Rust: "bg-orange-700",
       PHP: "bg-purple-500",
-    };
-    return colors[language || ""] || "bg-gray-500";
-  };
+    }
+    return colors[language || ""] || "bg-gray-500"
+  }
 
   return (
     <div className="w-full max-w-5xl mx-auto p-2 ">
@@ -197,5 +197,5 @@ export default function Github() {
         </div>
       )}
     </div>
-  );
+  )
 }

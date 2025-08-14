@@ -1,15 +1,15 @@
-import React from "react";
-import Image from "next/image";
+import React from "react"
+import Image from "next/image"
 export default function Song({
   song,
 }: {
   song: {
-    name: string;
-    title: string;
-    albumImageUrl: string;
-    artist: string;
-    songUrl: string;
-  };
+    name: string
+    title: string
+    albumImageUrl: string
+    artist: string
+    songUrl: string
+  }
 }) {
   return (
     <a
@@ -86,5 +86,5 @@ export default function Song({
         </div>
       </div>
     </a>
-  );
+  )
 }
