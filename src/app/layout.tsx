@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     title: "Илья Черемисин | Frontend developer",
     description: "Frontend developer cv",
     emails: "cheremisin.ilya@gmail.com",
+    images: '/api/og'
   },
 }
 
