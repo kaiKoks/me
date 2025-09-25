@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   openGraph: {
     title: "Илья Черемисин | Frontend developer",
-    description: "Frontend developer cv",
+    description: "React, Next.js developer",
     emails: "cheremisin.ilya@gmail.com",
     images: 'https://kaikoks.netlify.app/api/og'
   },
