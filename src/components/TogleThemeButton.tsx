@@ -13,7 +13,7 @@ export default function TogleThemeButton() {
           width={35}
           height={35}
           alt="dark theme"
-          src="moon.svg"
+          src="icons/moon.svg"
         ></Image>
       ) : (
         <Image width={35} height={35} alt="white theme" src="sun.svg"></Image>

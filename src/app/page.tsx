@@ -21,7 +21,7 @@ export default function Home() {
 
               <div className="flex items-center mb-1">
                 <Image
-                  src="/location.svg"
+                  src="icons/location.svg"
                   alt="location"
                   priority={true}
                   width={15}

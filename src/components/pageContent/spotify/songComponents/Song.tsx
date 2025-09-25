@@ -29,7 +29,7 @@ export default function Song({
             Now Playing
           </p>
           <Image
-            src="/music.png"
+            src="/icons/music.png"
             alt={song.title}
             width={15}
             height={15}

@@ -66,7 +66,7 @@ export default function Github() {
     <div className="w-full max-w-5xl mx-auto p-2 ">
       <div className="flex items-center justify-center gap-3 mb-5">
         <Image
-          src="/icons/github.svg"
+          src="icons/github.svg"
           width={32}
           height={32}
           alt="github"
@@ -121,7 +121,7 @@ export default function Github() {
                     className="p-1 transition-colors shrink-0"
                   >
                     <Image
-                      src="/externalLink.svg"
+                      src="icons/externalLink.svg"
                       width={16}
                       height={16}
                       alt="link"
@@ -157,7 +157,7 @@ export default function Github() {
                   <div className="flex items-center gap-3">
                     <div className="flex items-center gap-1">
                       <Image
-                        src="/star.svg"
+                        src="icons/star.svg"
                         width={12}
                         height={12}
                         alt="star"
@@ -169,7 +169,7 @@ export default function Github() {
                     </div>
                     <div className="flex items-center gap-1">
                       <Image
-                        src="/gitFork.svg"
+                        src="icons/gitFork.svg"
                         width={12}
                         height={12}
                         alt="git fork"
@@ -180,7 +180,7 @@ export default function Github() {
                   </div>
                   <div className="flex items-center gap-1">
                     <Image
-                      src="/calendar.svg"
+                      src="icons/calendar.svg"
                       width={12}
                       height={12}
                       alt="calendar"
