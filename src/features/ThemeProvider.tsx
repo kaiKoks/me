@@ -43,7 +43,6 @@ export default function ThemeProvider({
       document.documentElement.classList.add("dark")
     } else {
       document.documentElement.classList.remove("dark")
-      localStorage.theme = "light"
     }
   }, [theme])
 
