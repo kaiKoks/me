@@ -14,6 +14,7 @@ export default function TogleThemeButton() {
           height={35}
           alt="dark theme"
           src="icons/moon.svg"
+          loading="lazy"
         ></Image>
       ) : (
         <Image
@@ -21,6 +22,7 @@ export default function TogleThemeButton() {
           height={35}
           alt="white theme"
           src="icons/sun.svg"
+          loading="lazy"
         ></Image>
       )}
     </button>
