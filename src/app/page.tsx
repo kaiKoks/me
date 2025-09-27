@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className=" font-[family-name:var(--font-geist-sans)] flex flex-col items-center text-xl transition-all duration-300">
+    <div className=" font-[family-name:var(--font-geist-sans)] flex flex-col items-center text-xl">
       <div className="container mx-auto py-3 max-w-3xl ">
         <section className="mb-6 px-2 flex justify-center gap-2">
           <ImageOfMe />
