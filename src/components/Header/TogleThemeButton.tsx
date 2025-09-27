@@ -1,12 +1,12 @@
 import React from "react"
 import Image from "next/image"
-import { useTheme } from "@/features/ThemeProvider"
+import { useTheme } from "next-themes"
 
 export default function TogleThemeButton() {
-  const { theme, toggleTheme } = useTheme()
-
+  const { theme, setTheme } = useTheme()
+  console.log(theme)
   return (
-    <button className="" onClick={toggleTheme}>
+    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
       {theme === "dark" ? (
         <Image
           className="invert brightness-1"

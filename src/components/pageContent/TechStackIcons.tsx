@@ -132,20 +132,23 @@ const techIcons = [
 
 export default function TechStackIcons() {
   return (
-    <div className="flex flex-wrap justify-center gap-6">
-      {techIcons.map((tech, index) => (
-        <div
-          key={index}
-          className="group relative flex items-center justify-center w-15 h-15 bg-gray-50/70 dark:bg-neutral-900 rounded-xl shadow-md hover:shadow-lg hover:scale-110"
-        >
-          <div className="w-10 h-10">{tech.icon}</div>
+    <section className=" text-2xl md:text-3xl font-semibold text-center mb-6 ">
+      <h2 className="mb-2">Tech stack</h2>
+      <div className="flex flex-wrap justify-center gap-6">
+        {techIcons.map((tech, index) => (
+          <div
+            key={index}
+            className="group relative flex items-center justify-center w-15 h-15 bg-gray-50/70 dark:bg-neutral-900 rounded-xl shadow-md hover:shadow-lg hover:scale-110"
+          >
+            <div className="w-10 h-10">{tech.icon}</div>
 
-          <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-slate-900 dark:bg-gray-100 text-white dark:text-slate-900 text-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-            {tech.name}
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-slate-900 dark:border-t-slate-100"></div>
+            <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-slate-900 dark:bg-gray-100 text-white dark:text-slate-900 text-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+              {tech.name}
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-slate-900 dark:border-t-slate-100"></div>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </section>
   )
 }

@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
-import ThemeProvider from "@/features/ThemeProvider"
-import Header from "@/components/Header"
+import { ThemeProvider } from 'next-themes'
+import Header from "@/components/Header/Header"
 import { TanstackProvider } from "@/features/TanstackProvider"
 
 const geistSans = Geist({
@@ -40,7 +40,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-[#050505f1] text-black dark:text-white `}
       >
         <TanstackProvider>
-          <ThemeProvider>
+          <ThemeProvider attribute = 'class'>
             <Header />
             {children}
           </ThemeProvider>
