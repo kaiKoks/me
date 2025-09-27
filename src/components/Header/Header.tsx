@@ -1,17 +1,16 @@
 "use client"
 import React from "react"
-import Links from "../pageContent/Links"
+import Links from "./Links"
 import dynamic from "next/dynamic"
 
 const TogleThemeButton = dynamic(() => import("./TogleThemeButton"), {
   ssr: false,
-  loading(loadingProps) {
+  loading() {
     return (
       <div className="w-6 h-6 border-3 border-slate-600 border-t-transparent  rounded-full animate-spin"></div>
     )
   },
 })
-
 
 export default function Header() {
   return (
