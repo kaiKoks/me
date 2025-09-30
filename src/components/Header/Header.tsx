@@ -7,7 +7,7 @@ const TogleThemeButton = dynamic(() => import("./TogleThemeButton"), {
   ssr: false,
   loading() {
     return (
-      <div className="w-6 h-6 border-3 border-slate-600 border-t-transparent  rounded-full animate-spin"></div>
+      <div className="w-8.5 h-8.5 "></div>
     )
   },
 })

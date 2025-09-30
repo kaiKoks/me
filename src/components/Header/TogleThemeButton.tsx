@@ -10,16 +10,16 @@ export default function TogleThemeButton() {
       {theme === "dark" ? (
         <Image
           className="invert brightness-1"
-          width={35}
-          height={35}
+          width={34}
+          height={34}
           alt="dark theme"
           src="icons/moon.svg"
           loading="lazy"
         ></Image>
       ) : (
         <Image
-          width={35}
-          height={35}
+          width={34}
+          height={34}
           alt="white theme"
           src="icons/sun.svg"
           loading="lazy"
