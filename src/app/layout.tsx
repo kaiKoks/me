@@ -40,7 +40,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-[#050505f1] text-black dark:text-white `}
       >
         <TanstackProvider>
-          <ThemeProvider attribute = 'class'>
+          <ThemeProvider attribute = 'class' defaultTheme="system" enableSystem disableTransitionOnChange>
             <Header />
             {children}
           </ThemeProvider>

@@ -1,16 +1,7 @@
 "use client"
 import React from "react"
 import Links from "./Links"
-import dynamic from "next/dynamic"
-
-const TogleThemeButton = dynamic(() => import("./TogleThemeButton"), {
-  ssr: false,
-  loading() {
-    return (
-      <div className="w-8.5 h-8.5 "></div>
-    )
-  },
-})
+import TogleThemeButton from "./TogleThemeButton"
 
 export default function Header() {
   return (

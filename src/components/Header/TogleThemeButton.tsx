@@ -6,25 +6,24 @@ export default function TogleThemeButton() {
   const { theme, setTheme } = useTheme()
   console.log(theme)
   return (
-    <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-      {theme === "dark" ? (
-        <Image
-          className="invert brightness-1"
-          width={34}
-          height={34}
-          alt="dark theme"
-          src="icons/moon.svg"
-          loading="lazy"
-        ></Image>
-      ) : (
-        <Image
-          width={34}
-          height={34}
-          alt="white theme"
-          src="icons/sun.svg"
-          loading="lazy"
-        ></Image>
-      )}
+    <button className="relative w-8.5 h-8.5" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+      <Image
+        className="relative invert brightness-1 scale-0 dark:scale-100"
+        width={34}
+        height={34}
+        alt="dark theme"
+        src="icons/moon.svg"
+        loading="lazy"
+      ></Image>
+
+      <Image
+      className="absolute top-0 scale-100 dark:scale-0"
+        width={34}
+        height={34}
+        alt="white theme"
+        src="icons/sun.svg"
+        loading="lazy"
+      ></Image>
     </button>
   )
 }
