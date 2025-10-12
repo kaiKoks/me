@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+::view-transition-old(root) {
+  animation-delay: 500ms;
+}
+::view-transition-new(root) {
+  animation: circle-in 500ms;
+}
+@keyframes circle-in {
+  from { clip-path: circle(0% at 100% 0%); }
+  to { clip-path: circle(150% at 100% 0%); }
+}
+
 @theme {
   --animate-dance: dance 1.5s ease infinite;
 

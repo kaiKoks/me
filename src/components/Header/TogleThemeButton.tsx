@@ -6,7 +6,14 @@ export default function TogleThemeButton() {
   const { theme, setTheme } = useTheme()
   console.log(theme)
   return (
-    <button className="relative w-8.5 h-8.5" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+    <button
+      className="relative w-8.5 h-8.5"
+      onClick={() =>
+        document.startViewTransition(() =>
+          setTheme(theme === "dark" ? "light" : "dark")
+        )
+      }
+    >
       <Image
         className="relative invert brightness-1 scale-0 dark:scale-100"
         width={34}
@@ -17,7 +24,7 @@ export default function TogleThemeButton() {
       ></Image>
 
       <Image
-      className="absolute top-0 scale-100 dark:scale-0"
+        className="absolute top-0 scale-100 dark:scale-0"
         width={34}
         height={34}
         alt="white theme"
