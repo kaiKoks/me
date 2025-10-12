@@ -2,7 +2,7 @@ import Github from "@/components/pageContent/Github/Github"
 import PersanalInfo from "@/components/pageContent/PersanalInfo"
 import SpotifyPlayingNow from "@/components/pageContent/spotify/SpotifyPlayingNow"
 import TechStackIcons from "@/components/pageContent/TechStackIcons"
-import  AboutMe  from "@/components/pageContent/Aboutme"
+import AboutMe from "@/components/pageContent/Aboutme"
 
 export default function Home() {
   return (
@@ -14,9 +14,11 @@ export default function Home() {
         <section className="mb-3">
           <Github></Github>
         </section>
-        <div className="rounded-4xl max-w-[90vw] my-3 justify-center mx-auto">
+        {/*
+         <div className="rounded-4xl max-w-[90vw] my-3 justify-center mx-auto">
           <SpotifyPlayingNow />
         </div>
+        */}
       </div>
     </div>
   )
