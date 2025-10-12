@@ -1,5 +1,4 @@
-import React from "react"
-
+import Image from "next/image"
 const techIcons = [
   {
     name: "JavaScript",
@@ -103,6 +102,10 @@ const techIcons = [
     ),
   },
   {
+    name: "vite",
+    icon: <Image width={40} height={40} src="techIcons/vite.svg" alt="vite" />,
+  },
+  {
     name: "Next.js",
     icon: (
       <svg
@@ -128,6 +131,133 @@ const techIcons = [
       </svg>
     ),
   },
+  {
+    name: "Prisma orm",
+    icon: (
+      <Image
+        width={40}
+        height={40}
+        className="dark:invert"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADWElEQVR4nNWaW4hNURjHfzOMa0wYRPJiPJjw4BoRL9MYHtCYCE2ivIxQbilNGA+jeXJ/QbmXhOSWFOWSxohSFIbcZ3KbMnKZMUdL36nV6ezL2mvvc/b519c0Z6/v2/u397p869sbotUG4BPwDagF8shBLQISKbaCHFN/oDkNyGuggBzSoTQQSasiRzQD6HQBeQrkE3N1B564QCStgpir1uHCdwLbtP8fEGONBn47gIyQQf5K+20WMVQ+cNsB4rO2flRrv98lhqp2GQ+XUsbQe+3YdGKkIbJyO4HUpLRfrx27Qox01mOGKktp31vSluTxCcRAczwg1HoyII1fjdbmDFlWX+CtB8gzB99CoFWDVTNe1rTXx8J3zMW/Tmt3hCxpEtDhA2SVS4xBwA9pp2IVk2F1BR76gEgIsJt2a233k2Ft8QnxS9YNNw3TsgHVfmiGGBgJ/PQJcs9nzIOaTz0ZkEozrvuEULbLZ1yVh7WLTxtQFDEHyw0glC0xiH1S89saIcP/u6Svxn7MZBYqAf6KX6usM5HohCHElwAVk/Oa/8YoIMoMIZRdDnCecdoWWRUueoYJ0QtoCgAStJ9f02KorUFoqg8AoazconCREHsDdAsDYizwJwBEp+UUekuLtcwWogvQGPBpPLc8d3lKLHUtgbUuIISy49jrvhavMmiQ4cB3C5DVIYBUaPEeBS1+X7CAUDY5BJA84LEWc7ZpgPmWECqT7UE4WqrFvWPqfMASpIFw9z1NWuyZJs7zLEH2EK5WarHVYmmk0xYgqjuEqQJ5p5KMP8XEucjhJY0fUxuvsLVWi3/O1HluAIggGa/ffK/FpnR0yhDkKtFph3aew6bOqkL40QBkezQMFEqXskqBTLqYKp+GoTzZm2wGbqZJXAM/+aM+QQZaXLyaYBZLxdFtolHryqigJ+kHvPOAUCcwkcpop0p3bND264k09hLYJ0/cen9S6vGmVu3pvTRYMln1hL+6xGqXt1+bgPFEIL2QlmprHFKMaVKsbvS4Ec0CWBllBSWpwpRVNpEmOy2WwvVFKba53fUbUi0ZQxZU6nBn1Rh64TGOPsgXEQsycdfDzJA7pEvVSReL3ZdBfWQmSXfxLTKFLpQPa2KvEqm2t8lf9U5wYi58Y0Lc9Q9kS6Hd6ilkXwAAAABJRU5ErkJggg=="
+        alt="prisma-orm"
+      ></Image>
+    ),
+  },
+  {
+    name: "Drizzle orm",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={40}
+        height={40}
+        fill={"currentColor"}
+        viewBox="0 0 24 24"
+      >
+        {/* Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free */}
+        <path d="M6.13 10.67c.42.24.57.77.33 1.19l-2.82 4.92c-.24.42-.78.57-1.2.33a.87.87 0 0 1-.33-1.19L4.93 11c.24-.42.78-.57 1.2-.33M12.21 6.9c.42.24.57.77.33 1.19l-2.82 4.92c-.24.42-.78.57-1.2.33a.87.87 0 0 1-.33-1.19l2.82-4.92c.24-.42.78-.57 1.2-.33M21.56 6.9c.42.24.57.77.33 1.19l-2.82 4.92c-.24.42-.78.57-1.2.33a.87.87 0 0 1-.33-1.19l2.82-4.92c.24-.42.78-.57 1.2-.33M15.48 10.67c.42.24.57.77.33 1.19l-2.82 4.92c-.24.42-.78.57-1.2.33a.87.87 0 0 1-.33-1.19L14.28 11c.24-.42.78-.57 1.2-.33"></path>
+      </svg>
+    ),
+  },
+  {
+    name: "Prettier",
+    icon: (
+      <svg
+        role="img"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>Prettier icon</title>
+        <path d="M8.571 23.429A.571.571 0 0 1 8 24H2.286a.571.571 0 0 1 0-1.143H8c.316 0 .571.256.571.572zM8 20.57H6.857a.571.571 0 0 0 0 1.143H8a.571.571 0 0 0 0-1.143zm-5.714 1.143H4.57a.571.571 0 0 0 0-1.143H2.286a.571.571 0 0 0 0 1.143zM8 18.286H2.286a.571.571 0 0 0 0 1.143H8a.571.571 0 0 0 0-1.143zM16 16H5.714a.571.571 0 0 0 0 1.143H16A.571.571 0 0 0 16 16zM2.286 17.143h1.143a.571.571 0 0 0 0-1.143H2.286a.571.571 0 0 0 0 1.143zm17.143-3.429H16a.571.571 0 0 0 0 1.143h3.429a.571.571 0 0 0 0-1.143zM9.143 14.857h4.571a.571.571 0 0 0 0-1.143H9.143a.571.571 0 0 0 0 1.143zm-6.857 0h4.571a.571.571 0 0 0 0-1.143H2.286a.571.571 0 0 0 0 1.143zM20.57 11.43H11.43a.571.571 0 0 0 0 1.142h9.142a.571.571 0 0 0 0-1.142zM9.714 12a.571.571 0 0 0-.571-.571H5.714a.571.571 0 0 0 0 1.142h3.429A.571.571 0 0 0 9.714 12zm-7.428.571h1.143a.571.571 0 0 0 0-1.142H2.286a.571.571 0 0 0 0 1.142zm19.428-3.428H16a.571.571 0 0 0 0 1.143h5.714a.571.571 0 0 0 0-1.143zM2.286 10.286H8a.571.571 0 0 0 0-1.143H2.286a.571.571 0 0 0 0 1.143zm13.143-2.857c0 .315.255.571.571.571h5.714a.571.571 0 0 0 0-1.143H16a.571.571 0 0 0-.571.572zm-8.572-.572a.571.571 0 0 0 0 1.143H8a.571.571 0 0 0 0-1.143H6.857zM2.286 8H4.57a.571.571 0 0 0 0-1.143H2.286a.571.571 0 0 0 0 1.143zm16.571-2.857c0 .315.256.571.572.571h1.142a.571.571 0 0 0 0-1.143H19.43a.571.571 0 0 0-.572.572zm-1.143 0a.571.571 0 0 0-.571-.572H12.57a.571.571 0 0 0 0 1.143h4.572a.571.571 0 0 0 .571-.571zm-15.428.571h8a.571.571 0 0 0 0-1.143h-8a.571.571 0 0 0 0 1.143zm5.143-2.857c0 .316.255.572.571.572h11.429a.571.571 0 0 0 0-1.143H8a.571.571 0 0 0-.571.571zm-5.143.572h3.428a.571.571 0 0 0 0-1.143H2.286a.571.571 0 0 0 0 1.143zm0-2.286H16A.571.571 0 0 0 16 0H2.286a.571.571 0 0 0 0 1.143z" />
+      </svg>
+    ),
+  },
+  {
+    name: "Eslint",
+    icon: (
+      <Image
+        width={40}
+        height={40}
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFOUlEQVR4nO2ab2gbZRzHn5U5xhyoA53gf/Af290lz6VjomDI5ZKu97QMlSoiFkQUwRdNQ5Zu+uKJk72ZMJzvZK+soNKsaZM0dZuytPdU+6bMsc2uG9XVbsKqrF3STteW5uRJW9c2d8/dpUlJYV943t3z8P3kee73/H6/CwB3tc7kdqc3+4T4U1YH4skDVofbnd5YVvN+Z3dI4qI5D9emWR1IJNYHVG/UQdVbFvO+6iTnsWneNoBIIcjN+t3920sOIPOdl+yaLwpAzEMcK6l5D9/1poeLamsFoIjqXC3sqy6Rfa1K4mI3izEv8fEzCJKjiqhOFwHSWxL7PqHrc7vGvXzHDa+Qqltcox7+/DSCpM02hIs0rMq8/4UT2yTu+KzlX5xrn/Y7E9hovVqxV0KQnLN8lCAZrXMNbCkaQBYSp60Zj+ZkIdndsCO91WxNGuuRSN5HIvnLGoT6cVHm/fxJl5UX18vHB/2uE8/bXT9/eUFyFEEyawJwa29172O2Abxc5xXmry50jPuF1GusNcLhkRcPHpxysJ6pqe57ToFqyiQqfWXLvN+Reo9xzmf8QvIIa/6BA5cfDIWGewKB8xrGmRzGmTaMxx9nzUFOIiOR/KoPoeYUl7rbknkM0hs9XGyq0HxU8/HxHrej437j2VpVOPz7kUBgcLap6bxGRySSXRy3MM5EMNY2G812uQbuQSJporexTprRD4C2wRTAJySP6YTFvyUYF1jzWlr+aAwGL2UXjesALIzMVYwzjSwzyq70w0gk3xfuRN9bTPP13I/bJS46p/OifmZs/BoMhYYHVxo3BpgfGGd6WO+HAsmrOsfpqk84ea8hgJfr7Nc797KQOrzyWYzHtu7b91usqelCzsg8C2BhN+YwzrYeOjRZkLwhkbxikCd9omt+j/OU28Prh009gFDo8ijLuDWA7MJuZIesAihQ/afGkX6yAEDiO/40ijx6AMHg0ESpACKR7ITlHZgPq98te9jn6GpmxfxKA0D5neh9Of9gQ0PbJolr/3e9ASBIzmCgVQGZT3xrli5UJIBItDqovgOsZJuVCoAgOQes1LmVCqCI6jXgFeID6xUAQXIYIEfyEQ93fG79AahjsuuH+/IPy0Ly6/UGoDjJu8syUEk3A61QALgQQpdKFlIf2AEIhYbPlg4g02vrJl68xFbKy8dHrQJQhcNXPm1uvjizCoCJSCTbgrG2yQbAN7rm8wA7u3fp1cFGAEuz0kBAPytlZaEYTz5ktK4eAE3kFPjTE4AlWnUVAiTSzEmMuqAw88ycNquTqRRRxTpx37BlY9oLos2qGr5rr9n8/ftH3g4GhzIrATDOjM5XYmwhZ88zek0w2iNiFjNLJfPJL/Rf6Gi+jVIrpJ5lr3CnNsY4O2VWC1PRnhKCJIJEclv/1iWvAzvycrEJ47shmpP5RIxmsqw1MB7dhvEEowkAAA2HyEkaFaheZ4TNPksF/TKAnak3zFIMiW+/LfPJj0CRqnOqbiSqv5StU+0V4hfNIPIvOd9xnZakVtfdw6cfRSJppf0e03xHJF+CYkVbhh6uzfJXGZmPn6W5ldF6tFFLzzkNhxaMawiqGdpiAauRT0jErQLkjxUXnaO5FU1P7qyibaCtciSqI5aMi/8XLEGwWrlciS0S3z5tB2I+7MYmfXzqw1qX+hLtqtkxjuZ//aGGHReYQcKyfI5k2C7A4rBtXFwYrj4FlFJernNszQCgegqUWn5Hl2dNAKA6Q1vuoBzy8fFWu9+KbQKM0683oJyi0aVcfzXAK4uUuwKVr/8AjImJ/IIN8AkAAAAASUVORK5CYII="
+        alt="external-eslint-pluggable-and-configurable-linter-tool-for-identifying-and-reporting-on-patterns-in-javascript-logo-shadow-tal-revivo"
+      />
+    ),
+  },
+  {
+    name: "Redux Toolkit",
+    icon: (
+      <Image
+        width={40}
+        height={40}
+        className="dark:invert"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAExklEQVR4nO2aa4hVVRTHf86MStpDjXJ6SA8GpxCbzIzSLEMrQW1EED9UBBZhRdBDnDBLKCN6SBZDQUT2GsRwMiuNUISmEslEP5Q1o71Tmyw1S80pu7Hgf4bt7bzvOccp/MP+cPdj7XX2Xnvt/1r7wjH8v1ENNAKvAV8CB4CDwDbgVWAKUEUPx1XAZ0AponwKXEwPRC/gIeBvKdoO3A0MA44DBgIjgfuB79SnC5hDD8NTUu6wlK0J6WttDwN/acwCeghuk0L7gEkJxl2rs1PS7h1VjAH+1E7YIU6KRo23chFH0Ttt0oo+WIGcBZKxKcIkc8OtUmBLhQr0lRczWbdTMEzx7Zp8cgbyGiVra9F3zCRNvCEjeVXaWZM5lQLRqknvzFDmHZK5nILQHzikC+2UDOWeoQt1H9CHAnCFVu7DHGR/LNlGdXLHHE22KKB9BLAK+E2ruxK4MKZsk2myH6DA83G9T9t5wH4fkmh1w2PInqn+r1AAvO03EliON9S2FBisslR1b8aQfT7QCayjAGyTYuf4tP2ktlqn7jSHUP6oGGUjsAy4D7ga6Fd2QTYW8B38IsUGhHyIKV/+IWHld6BFl2tvCkKXJq+JMK1aFc+03gKGAOcCo4AbRf/XO3GMFduxm8TlcsXPmnCQT1u9VtdvxcMO+1lAE/CFM+ZzYGKO30GHJqoLaDdX+45cr5W3gYaYsm0XbhDnKmmnmsvOUEWodw73ek1yCfmhBpgN/OHsThz3HYrRMqfp+u3ZvNlx3hgObNZ8u4HL0gqaqHROSfEHCkvt97MUg77O4tlZm5BUwAjRDBPwnBMnXKo6uwuyQBxKUyUdSorzY5v1mU7g1Kx0j7tC+5UFsX6VIIzS1Pv0b1a7pZROjRJuSq/WgPcC/PnLap9b4YeEUZrWACewRu1ro+6aW9TxWyXWwqh8e9luJUUYpekMGGP319fqY7r6wmjHHnUKS+/0ci4v8/tpEUZpOkPGXac+O4Hj/To0qcOKGEpMU98fFDWmQRilaY0Y+676zS9v6OMc8Lj+2rPXLc5NniSQCqM09RFjRzkH/wjzHq8GizfiYnIAmw3yOn5ocPibmbVZwwUxx3r5sLFu5WOqnJfgQ5Yl9Dp+uFL9t6fgVE0a+7RbuS6hWRl2pfA65RfdRvWfRXKM19gjIsqvVGmrmrfXKU9kdKQMqE53vFc3flVl74K8zgSxgy4R0zSo1lzGB7uxQ5WRV38GXmeoc8DvJT0GSIaF3934QJX25pEESQOpBiUhvF2rhBmMlpxP/AjZQvLDGIc5LM8gNfqIZD3jx59sy08kW1TrbdFLXCzJ4FHnJMfZ/MuK2tRg7+FZoU55Yi+39WhGGZIWyWwLmtQLphZV+OhSq4vqkEMlxlE5qmRKJelaF8YsvdfW9xPwJm8SowuLncSBPXS+4IQEJ4sRvC6KU5MwmmxzIsXIB9hxjju2lMxHwF2yxVod0n66PC30vRl4SUy45JhRi1ytiyf1cSXn4lyiXMDlSuAN0jk9G7gGuEc6eGN2iNrEggl6AtgbI+Xplg49C5gSQRii19z2hLL3Ao8DJ5AC9heMGcDzejPcqW01+/xGbHmxsixpck/D9IT3onjX97pQD2quDZp7hnQ5Bv4r+Ad+XcNMPi5OxAAAAABJRU5ErkJggg=="
+        alt="redux"
+      />
+    ),
+  },
+  {
+    name: "Shadcn UI",
+    icon: (
+      <svg
+        width="40"
+        height="40"
+        className="dark:invert"
+        viewBox="0 0 100 100"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clipPath="url(#clip0_790_3387)">
+          <path
+            d="M81.25 49.9996L50 81.2496"
+            stroke="black"
+            strokeWidth="6.25"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M75 15.6246L15.625 74.9996"
+            stroke="black"
+            strokeWidth="6.25"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_790_3387">
+            <rect
+              width="100"
+              height="100"
+              fill="white"
+              transform="translate(0 -0.000366211)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    ),
+  },
+  {
+    name: "TanStack Query",
+    icon: (
+      <Image
+        width={40}
+        height={40}
+        src="techIcons/tanstack-query.svg"
+        alt="TanStack Query"
+      />
+    ),
+  },
+  {
+    name: "SWR",
+    icon: (
+      <Image
+        width={40}
+        height={40}
+        className="dark:invert "
+        src="techIcons/swr.svg"
+        alt="SWR"
+      />
+    ),
+  },
 ]
 
 export default function TechStackIcons() {
@@ -140,7 +270,7 @@ export default function TechStackIcons() {
             key={index}
             className="group relative flex items-center justify-center w-15 h-15 bg-gray-50/70 dark:bg-neutral-900 rounded-xl shadow-md hover:shadow-lg hover:scale-110"
           >
-            <div className="w-10 h-10">{tech.icon}</div>
+            <div className="w-10 h-10 flex">{tech.icon}</div>
 
             <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-slate-900 dark:bg-gray-100 text-white dark:text-slate-900 text-sm px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
               {tech.name}
