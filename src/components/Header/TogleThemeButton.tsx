@@ -4,7 +4,6 @@ import { useTheme } from "next-themes"
 
 export default function TogleThemeButton() {
   const { theme, setTheme } = useTheme()
-  console.log(theme)
   return (
     <button
       className="relative w-8.5 h-8.5"
