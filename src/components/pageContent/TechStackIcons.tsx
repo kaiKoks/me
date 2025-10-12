@@ -132,8 +132,8 @@ const techIcons = [
 
 export default function TechStackIcons() {
   return (
-    <section className=" text-2xl md:text-3xl font-semibold text-center mb-6 ">
-      <h2 className="mb-2">Tech stack</h2>
+    <section className=" text-2xl md:text-3xl font-semibold text-center mb-4 ">
+      <h2 className="mb-4">Tech stack</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {techIcons.map((tech, index) => (
           <div

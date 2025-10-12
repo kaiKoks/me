@@ -3,7 +3,7 @@ export default function AboutMe() {
     <div className="mx-auto max-w-4xl px-6 mb-6">
       {/* Header Section */}
       <header className="mb-6">
-        <h1 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl text-center mb-4">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl text-center">
           Обо мне
         </h1>
         <p className="text-base text-slate-600 dark:text-slate-400 md:text-lg">
