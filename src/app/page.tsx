@@ -1,14 +1,15 @@
-import Github from "@/components/pageContent/Github"
+import Github from "@/components/pageContent/Github/Github"
 import PersanalInfo from "@/components/pageContent/PersanalInfo"
 import SpotifyPlayingNow from "@/components/pageContent/spotify/SpotifyPlayingNow"
 import TechStackIcons from "@/components/pageContent/TechStackIcons"
+import  AboutMe  from "@/components/pageContent/Aboutme"
 
 export default function Home() {
   return (
     <div className=" font-[family-name:var(--font-geist-sans)] flex flex-col items-center text-xl">
       <div className="container mx-auto pb-3 max-w-3xl ">
         <PersanalInfo />
-
+        <AboutMe />
         <TechStackIcons />
         <section className="mb-3">
           <Github></Github>
