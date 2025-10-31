@@ -8,10 +8,10 @@ export default function PersanalInfo() {
 
       <div className="flex gap-3 items-center justify-center">
         <div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-1">Ilya</h1>
+          <h1 className="text-3xl md:text-5xl font-bold mb-1">Илья Черемисин</h1>
           <h2 className="text-3xl md:text-5xl opacity-50">
             {" "}
-            Frontend developer
+            Frontend разработчик
           </h2>
 
           <div className="flex items-center mb-1">
@@ -23,7 +23,7 @@ export default function PersanalInfo() {
               height={15}
               className=" inline mr-1 brightness-50 dark:brightness-100 dark:opacity-50"
             ></Image>
-            <h3 className="opacity-50 text-lg">Barnaul, Russia</h3>
+            <h3 className="opacity-50 text-lg">Барнаул, Россия</h3>
           </div>
           <h4 className="text-sm opacity-50 mb-2">cheremisin.ilya@gmail.com</h4>
         </div>
