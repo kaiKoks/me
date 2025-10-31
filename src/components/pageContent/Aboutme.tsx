@@ -76,8 +76,8 @@ export default function AboutMe() {
             <div className="h-px flex-1 bg-slate-300 dark:bg-slate-700" />
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {["REST API", "Jira", "Postman", "Git", "Figma", "npm/pnpm", "Confluence"].map(
+          <div className="grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
+            {["REST API", "Jira", "Trello", "Postman", "Git", "Figma", "npm/pnpm", "Confluence"].map(
               (tool) => (
                 <div
                   key={tool}
